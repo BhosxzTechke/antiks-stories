@@ -1,0 +1,8 @@
+{
+  "voice": "bm_george",
+  "lines": [
+    {"text": "The war ended in 1945.", "speed": 0.95, "pause": 0.4},
+    {"text": "But on a small island in the Philippines, one soldier never got the message.", "speed": 1.0, "pause": 0.6},
+    {"text": "He kept fighting... for *29 years*.", "speed": 0.85, "pause": 0.5}
+  ]
+}
