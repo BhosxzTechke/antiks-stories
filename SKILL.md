@@ -1,6 +1,6 @@
 ---
 name: antiks-stories
-description: Produce a 62–75s vertical cartoon story video for the "Antiks Stories" channel (little-known Philippine stories, stickman graduation-cap host, doodle-plus characters, real archive photos, Kokoro bm_george narration, no music). Use when the user wants a new Antiks video, a story idea, a hook, a script, a re-render or a fix of an Antiks video, or says "next video", "story finder" or "/antiks-stories".
+description: Produce a 62–75s vertical cartoon story video for the "Antiks Stories" channel (little-known Philippine stories, stickman graduation-cap host, doodle-plus characters, real archive photos, Kokoro bm_george narration, no music). Use when the user wants a new Antiks video, a story idea, a hook, a script, a re-render or a fix of an Antiks video, or says "next video", "story finder", "scout", "find me stories" or "/antiks-stories".
 ---
 
 # Antiks Stories — video production
@@ -14,6 +14,7 @@ Read the reference file for a step **before** doing that step:
 | File | Use it for |
 |---|---|
 | `reference/brand.md` | host, signature moments, colours, tone of voice |
+| `reference/scout.md` | step 0: trend check, 5 scroll-stopping options, writing `story.md` |
 | `reference/storytelling.md` | cold open + payoff structure, hook selection, mini-hooks, endings |
 | `reference/visual-style.md` | doodle-plus rules, tone-switch camera/transition toolkit, retention rules, safe zone |
 | `reference/sound-design.md` | which SFX for which moment, sync + mix rules, approved sources |
@@ -38,12 +39,14 @@ First time on a machine/project: run `scripts/setup.ps1 -Project <project root>`
 
 ## Workflow — 3 checkpoints
 
-**Starting:** channel decisions are fixed in this skill — never re-interview the user about style, host, voice, sound or length. If the user gave a topic (e.g. `/antiks-stories Battle of Mactan`), go straight to step 1. If not, ask ONE question: "Do you have a story topic, or should I run the story finder?" If a video folder is already in progress in `videos/`, offer to continue it instead.
+**Starting:** channel decisions are fixed in this skill — never re-interview the user about style, host, voice, sound or length. If the user gave a `story.md` (or one exists in `videos/<slug>/`), use the **fast path** in step 1. If the user gave a topic (e.g. `/antiks-stories Battle of Mactan`), go straight to step 1. If not, ask ONE question: "Do you have a story topic, or should I run the scout (5 options)?" If a video folder is already in progress in `videos/`, offer to continue it instead.
 
 ### 0. Pick the story
-User topic, or run the **story finder**: research 5–8 candidates (see research-and-facts.md), score each 1–5 on *surprise, emotion, visual potential, verifiability, Filipino pride/shareability*, add the best to `data/story-backlog.md`, present the top 3. Avoid topics used in `data/video-log.md`.
+User topic, or run the **scout** (`reference/scout.md`): trend check, 5 verified, scroll-stopping options with ready hooks → user picks → write `videos/<NN-slug>/story.md`. Avoid topics used in `data/video-log.md`.
 
 ### 1. Research → brief → ✅ CHECKPOINT 1
+**Fast path (a `story.md` from the scout exists):** do NOT research again. Copy it to `brief.md`, spot-check that each archive image licence is valid before downloading into `archive/` (log in `licenses.csv`), re-verify only anything marked unverified or disputed, then go straight to the Checkpoint 1 summary (story, sources, photos, 3 hooks + recommendation). Skip items 1-3 below.
+
 1. Research and verify: every key fact needs **2 independent reliable sources**; label myths/legends; note what is disputed.
 2. Find 2–4 real archive images (public domain / CC0 / PD-US-gov). Record each in `licenses.csv` (file,source URL,licence,notes). Download into `archive/`.
 3. Trend check (trends.md) — suggest one format only if it passes the fit test.
