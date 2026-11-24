@@ -1,0 +1,15 @@
+{
+  "duration": 12.0,
+  "voice": "voice.wav",
+  "voice_db": 0,
+  "beds": [
+    {"file": "sfx:amb-wind.wav", "start": 0, "end": 12.0, "db": -26, "fade": 1.0}
+  ],
+  "sfx": [
+    {"file": "sfx:sting-dark.wav", "at": 0.0, "db": -6},
+    {"file": "sfx:rewind.wav", "at": 2.4, "db": -8},
+    {"file": "sfx:shutter.wav", "at": 3.4, "db": -6},
+    {"file": "sfx:impact.wav", "at": 8.0, "db": -3},
+    {"file": "sfx:pop.wav", "at": 7.8, "db": -10}
+  ]
+}

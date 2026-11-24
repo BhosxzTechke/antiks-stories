@@ -1,4 +1,4 @@
-MIT License
+﻿MIT License
 
 Copyright (c) 2026 Antiks Stories
 
@@ -26,10 +26,10 @@ BRAND NOTICE (not covered by the MIT License above)
 The name "Antiks Stories", the tagline "Old stories. New antics.", the handle
 "@antiksstories", and the Antiks Stories host character design (the stickman
 with a black graduation cap, gold tassel and gold sun badge, as set in the
-default antiks-stories/data/brand.json) identify the Antiks Stories channel.
+default data/brand.json) identify the Antiks Stories channel.
 They are not licensed for use as the name, branding or mascot of another
 channel, account or product.
 
 You are free to use and modify all the code to make your own videos. Before
 publishing, set your own channel name, tagline and host look in
-antiks-stories/data/brand.json (see antiks-stories/README.md, "Make it yours").
+data/brand.json (see README.md, "Make it yours").

@@ -1,0 +1,18 @@
+{
+  "_help": "Your channel's identity. If you are not the Antiks Stories channel, CHANGE name, tagline, handle and the host look (see README > Make it yours).",
+  "name": "Antiks Stories",
+  "tagline": "Old stories. New antics.",
+  "handle": "@antiksstories",
+  "narrator_voice": "bm_george",
+  "colors": {
+    "accent": "#f5c542",
+    "ink": "#111111",
+    "paper": "#efe6d2"
+  },
+  "host": {
+    "cap_color": "#1b1b1b",
+    "tassel_color": "#f5c542",
+    "badge": "sun",
+    "badge_color": "#f5c542"
+  }
+}
